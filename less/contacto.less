@@ -1,0 +1,39 @@
+.contacto {
+  background-color: lighten(@primary-bg-color, 35%);
+  text-align: center;
+  .p-y-5();
+
+  h2 {
+    .text-large();
+    margin-bottom: @unit4;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: @unit3;
+    max-width: 400px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+      .p-3();
+      border: 1px solid #ccc;
+      .roundSmall();
+      resize: none;
+    }
+
+    button {
+      .p-3();
+      background: @secondary-bg-color;
+      color: white;
+      border: none;
+      .roundSmall();
+      cursor: pointer;
+
+      &:hover {
+        background: darken(@secondary-bg-color, 10%);
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@primary-bg-color: #3b82f6;
+@primary-text-color: #1f2937;
+
+@secondary-bg-color: #2563eb;
+@secondary-text-color: #1f2937;
+
+@unit8: 2rem;
+@unit5: 1.5rem;
+@unit4: 1rem;
+@unit3: 0.8rem;
+@unit2: 0.5rem;
+@unit1: 0.25rem;
+@unit0: 0rem;
+
+/*Mixins*/
+
+.p-4 {
+    padding: @unit4;
+}
+
+.p-x-4{
+    padding-left: @unit4;
+    padding-right: @unit4;
+}
+
+.p-y-4{
+    padding-top: @unit4;
+    padding-bottom: @unit4;
+}
+
+.p-5 {
+    padding: @unit5;
+}
+
+.p-x-5{
+    padding-left: @unit5;
+    padding-right: @unit5;
+}
+
+.p-y-5{
+    padding-top: @unit5;
+    padding-bottom: @unit5;
+}
+
+.p-3 {
+    padding: @unit3;
+}
+
+.p-x-3{
+    padding-left: @unit3;
+    padding-right: @unit3;
+}
+
+.p-y-3{
+    padding-top: @unit3;
+    padding-bottom: @unit3;
+}
+
+
+.text-small {
+    font-size: @unit3;
+}
+
+.text-normal {
+    font-size: @unit4;
+}
+
+.text-large {
+    font-size: @unit5;
+}
+.text-extra-large {
+    font-size: @unit8;
+}
+
+.round {
+    border-radius: 9px;
+}
+
+.roundSmall {
+    border-radius: 3px;
+}
+
+.shadow {
+    box-shadow: 3px 3px 5px darken(@primary-bg-color, 20%)
+}

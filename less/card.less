@@ -1,0 +1,52 @@
+.proyectos {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  flex-wrap: wrap;
+ 
+
+  .h2 {
+    text-align: center;
+    align-items: center;
+    background-color: aqua;
+    align-items: center;
+    
+  }
+
+  .card {
+    background: white;
+    .round();
+    .shadow();
+    width: 90%;
+    max-width: 600px;
+    margin: @unit3 auto;
+    .p-4();
+   
+    img {
+      width: 100%;
+      .round();
+    }
+
+    h3 {
+      .text-normal();
+      margin-top: @unit3;
+    }
+
+    p {
+      .text-small();
+      margin-top: @unit2;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    gap: @unit5;
+
+    .card {
+      margin: 0;
+    }
+  }
+}
